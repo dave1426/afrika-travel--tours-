@@ -3,141 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afrika Travel and Tours | 50/50 or Pay Full Upfront | Safe Routes Only</title>
+    <title>Afrika Travel and Tours | Car + Driver Per Day | Safe Routes | 50/50 or Full 5% OFF</title>
     <link rel="icon" type="image/png" href="https://img.icons8.com/color/96/globe--v1.png">
-    <meta property="og:title" content="Afrika Travel | Pay 50/50 or Full Upfront - Your Choice - Safe Routes">
-    <meta property="og:description" content="Choose: 50% booking + 50% last day OR pay 100% upfront with 5% discount. Safe routes only, unlimited stops 8am-7pm.">
+    <meta name="description" content="Rent car + driver per day 8am-7pm flat. Safe official routes only, no dangerous shortcuts. Unlimited stops, driver waits free. Payment: 50/50 or full upfront 5% OFF. Sedan R2800/day, SUV R3500, Quantum R4800. Cape Town.">
+    <meta property="og:title" content="Afrika Travel and Tours | Safe Routes | Fair Payment">
+    <meta property="og:description" content="50% booking + 50% last day OR full upfront 5% OFF. Safe routes only, unlimited stops 8am-7pm flat, no extra hour fees. Vetted local driver-partners.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=1200">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']}}}}</script>
+    <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']}}}};</script>
+    <style>html{scroll-behavior:smooth}</style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <div class="bg-slate-900 text-white text-center py-2 text-xs font-bold">
-        <i class="fa-solid fa-shield-halved text-emerald-400 mr-2"></i> SAFE ROUTES ONLY - No dangerous shortcuts | <span class="text-amber-300">Choose Payment: 50/50 or Full Upfront (5% OFF)</span>
+    <!-- TRUST TOP BAR -->
+    <div class="bg-slate-900 text-white text-center py-2.5 px-4 text-[11px] font-bold tracking-wide flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
+        <span><i class="fa-solid fa-shield-halved text-emerald-400 mr-1.5"></i>SAFE ROUTES ONLY - No shortcuts through high crime areas</span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="text-amber-300"><i class="fa-solid fa-credit-card mr-1.5"></i>Pay 50/50 OR Full Upfront 5% OFF - Your Choice</span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span><i class="fa-solid fa-infinity text-emerald-400 mr-1.5"></i>Unlimited Stops 8am-7pm Flat</span>
     </div>
 
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white shadow-md"><i class="fa-solid fa-compass text-xl"></i></div>
-                <span class="text-xl font-extrabold tracking-tight text-slate-900">Afrika <span class="text-emerald-600">Travel & Tours</span></span>
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
+            <div class="flex items-center space-x-2.5">
+                <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white shadow-md"><i class="fa-solid fa-compass text-[20px]"></i></div>
+                <div>
+                    <div class="text-[17px] font-extrabold tracking-tight leading-none text-slate-900">Afrika <span class="text-emerald-600">Travel & Tours</span></div>
+                    <div class="text-[10px] font-bold tracking-widest text-slate-500 uppercase mt-0.5">Driver-Partner Network • Cape Town</div>
+                </div>
             </div>
-            <nav class="hidden md:flex items-center space-x-6 font-medium text-slate-600 text-sm">
-                <a href="#" class="text-emerald-600 font-semibold">Home</a>
-                <a href="#payment" class="hover:text-emerald-600">Payment Options</a>
-                <a href="#rates" class="hover:text-emerald-600">Day Rates</a>
+            <nav class="hidden lg:flex items-center space-x-8 font-semibold text-[13px] text-slate-600">
+                <a href="#home" class="text-emerald-600">Home</a>
+                <a href="#safety" class="hover:text-emerald-600 transition">Safety & Routes</a>
+                <a href="#payment" class="hover:text-emerald-600 transition">Payment Options</a>
+                <a href="#rates" class="hover:text-emerald-600 transition">Day Rates</a>
+                <a href="#examples" class="hover:text-emerald-600 transition">What 1 Day Covers</a>
             </nav>
-            <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%20I%20need%20car%20%2B%20driver%20safe%20routes" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg">Book Now</a>
+            <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%20-%20I%20need%20car%20%2B%20driver%20per%20day%20-%20Safe%20routes" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl font-bold text-[13px] shadow-lg shadow-emerald-600/20 transition">
+                <i class="fa-brands fa-whatsapp text-[16px]"></i> Book Safe
+            </a>
         </div>
     </header>
 
-    <section class="relative pt-12 pb-20 overflow-hidden bg-slate-900">
-        <div class="absolute inset-0 z-0 opacity-30"><img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent z-0"></div>
+    <!-- HERO -->
+    <section id="home" class="relative pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 z-0 opacity-35"><img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&q=80&w=2000" alt="Cape Town Peninsula" class="w-full h-full object-cover"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-slate-900/20 z-0"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl">
-                <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-xs font-bold bg-white text-slate-900 mb-6">FLEXIBLE PAYMENT - YOUR CHOICE</span>
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">Pay How You Want.<br><span class="text-emerald-400">50/50</span> or <span class="text-amber-300">Full Upfront (5% OFF)</span></h1>
-                <p class="text-slate-200 text-base mb-8">We understand - some clients want to finish payment, some want to split. <b class="text-white">Option 1: 50% on booking + 50% on last day morning. Option 2: Pay 100% upfront now and get 5% discount.</b> Both include safe routes only, no dangerous shortcuts, unlimited stops 8am-7pm flat.</p>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-white rounded-2xl p-4 shadow-2xl">
-                        <div class="font-extrabold text-sm text-slate-900">Option A: 50/50 Split</div>
-                        <div class="text-xs text-slate-500 mt-1">50% booking secures car+driver, 50% on last day morning. 1-day tour: 50% booking, 50% at pickup.</div>
-                        <div class="mt-2 text-xs font-bold text-emerald-600">Most Popular - Protects Both</div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 bg-white text-slate-900 px-3.5 py-1.5 rounded-full text-[11px] font-extrabold mb-5 shadow-lg">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span> YOU DROVE BEFORE - YOU KNOW THE MODEL: CAR + DRIVER PER DAY
                     </div>
-                    <div class="bg-amber-50 border-2 border-amber-400 rounded-2xl p-4 shadow-2xl">
-                        <div class="font-extrabold text-sm text-slate-900">Option B: Full Upfront = 5% OFF</div>
-                        <div class="text-xs text-slate-600 mt-1">Pay 100% now, get 5% discount. Sedan R2,800 → R2,660 only. Peace of mind, done.</div>
-                        <div class="mt-2 text-xs font-bold text-amber-700">Best for organized travelers</div>
+                    <h1 class="text-[32px] sm:text-[42px] lg:text-[48px] font-extrabold text-white tracking-tight leading-[0.95] mb-5">
+                        Rent a Car + Driver <span class="text-emerald-400">Per Day</span><br>
+                        <span class="text-[28px] sm:text-[34px] font-bold text-slate-200">8am-7pm Flat • Unlimited Stops • Safe Routes Only</span>
+                    </h1>
+                    <p class="text-[15px] leading-relaxed text-slate-300 max-w-2xl mb-7">
+                        As you experienced: Hotel pickup, airport pickup counts as 1 day, airport drop-off counts as 1 day, shopping, wine tour, Peninsula - all same day rate. Driver waits at hotel/mall/restaurant until you call. <b class="text-white">No extra hour fee till 7pm.</b> We stick to official safe routes only - N1, N2, M65 Chapman's Peak, Victoria Rd - no dangerous shortcuts through high crime areas.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%21%20I%20want%20to%20book%20car%20%2B%20driver%20per%20day%20-%20Option%3A%20%5B50%2F50%20or%20FULL%205%25%20OFF%5D%20Date%3A%20___%20People%3A%20___" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-extrabold text-sm shadow-xl shadow-emerald-600/20">
+                            <i class="fa-brands fa-whatsapp"></i> Book - Choose 50/50 or Full 5% OFF
+                        </a>
+                        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-3.5 rounded-xl text-xs font-bold">
+                            <i class="fa-solid fa-shield-halved text-emerald-400"></i> Free Cancellation 24h
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl p-4 shadow-2xl grid grid-cols-3 gap-3 text-center max-w-xl">
+                        <div><div class="font-extrabold text-slate-900 text-[15px]">08:00-19:00</div><div class="text-[11px] text-slate-500 font-medium">11 Hours Flat</div></div>
+                        <div><div class="font-extrabold text-emerald-600 text-[15px]">R0 Extra</div><div class="text-[11px] text-slate-500 font-medium">Till 7pm - No Surcharge</div></div>
+                        <div><div class="font-extrabold text-slate-900 text-[15px]">Waits Free</div><div class="text-[11px] text-slate-500 font-medium">Mall / Hotel / Restaurant</div></div>
+                    </div>
+                    <p class="text-[11px] text-slate-400 mt-3 max-w-xl">Driver lunch: Client buys lunch or we add R100 indirectly in price as you said. After 8pm late night airport = small R200/hr overtime only.</p>
+                </div>
+                <!-- RIGHT CARDS -->
+                <div class="lg:col-span-5 grid grid-cols-1 gap-4">
+                    <div class="bg-white rounded-[20px] p-5 shadow-2xl border-l-[5px] border-emerald-600">
+                        <div class="flex gap-3.5">
+                            <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 text-[18px]"><i class="fa-solid fa-infinity"></i></div>
+                            <div>
+                                <h4 class="font-extrabold text-[13px] leading-tight">UNLIMITED STOPS - Driver Waits FREE</h4>
+                                <p class="text-[12px] text-slate-500 mt-1.5 leading-relaxed">Stop for coffee, photo, shopping, ATM? No limit. Others limit to 4 stops. We don't. Driver stays in parking till you call.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-[20px] p-5 shadow-2xl border-l-[5px] border-amber-400">
+                        <div class="flex gap-3.5">
+                            <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 text-[18px]"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <h4 class="font-extrabold text-[13px] leading-tight">SAFE ROUTES ONLY - No Dangerous Shortcuts</h4>
+                                <p class="text-[12px] text-slate-600 mt-1.5 leading-relaxed">No shortcuts via Nyanga, Gugulethu interior, Lavender Hill, Delft. We use N2, Chapman's Peak toll (included), Victoria Rd Camps Bay, Ou Kaapse Weg - tourist police patrolled.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-[20px] p-5 shadow-2xl border-l-[5px] border-slate-900">
+                        <div class="flex gap-3.5">
+                            <div class="w-11 h-11 rounded-xl bg-slate-100 text-slate-900 flex items-center justify-center shrink-0 text-[18px]"><i class="fa-solid fa-credit-card"></i></div>
+                            <div>
+                                <h4 class="font-extrabold text-[13px] leading-tight">FLEXIBLE PAYMENT - 50/50 OR Full 5% OFF</h4>
+                                <p class="text-[12px] text-slate-500 mt-1.5 leading-relaxed">Option A: 50% booking + 50% last day morning. Option B: Pay 100% upfront now = 5% discount. Your choice. No risky 100% pay-after - we can't trust humans lol.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="payment" class="py-10 bg-white border-b">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-slate-50 rounded-2xl p-6 border-2 border-slate-200">
-                <h3 class="font-extrabold text-sm"><i class="fa-solid fa-scale-balanced text-slate-700 mr-2"></i>Option A: 50% / 50% - Fair & Safe</h3>
-                <div class="mt-4 space-y-2 text-xs">
-                    <div class="flex justify-between bg-white p-3 rounded-xl border"><span><b>Day of Booking</b> - Secure car+driver+fuel</span><span class="font-extrabold text-lg">50%</span></div>
-                    <div class="flex justify-between bg-white p-3 rounded-xl border"><span><b>Multi-day:</b> Morning of Last Day</span><span class="font-extrabold text-lg">50%</span></div>
-                    <div class="flex justify-between bg-emerald-50 p-3 rounded-xl border border-emerald-200"><span><b>1-Day Tour:</b> At Pickup Morning</span><span class="font-extrabold text-lg text-emerald-700">50%</span></div>
-                    <p class="text-[11px] text-slate-500">Why: Owner needs fuel money upfront. You can't trust 100% pay-after lol - you were right CEO.</p>
+    <!-- SAFETY & PAYMENT -->
+    <section id="safety" class="py-10 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-7 bg-amber-50 border border-amber-200 rounded-[20px] p-6">
+                <h3 class="font-extrabold text-[14px] flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation text-amber-600"></i>Why Safe Routes Only? You Know As Driver:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 text-[12px] leading-relaxed text-slate-700">
+                    <ul class="space-y-2">
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i><b>We USE:</b> N1 for Paarl, N2 for Airport/Winelands, M65 Chapman's Peak (toll included R54), Victoria Road via Camps Bay, Ou Kaapse Weg - all with tourist police</li>
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i><b>We AVOID:</b> Shortcuts through Cape Flats interior after 4pm, Nyanga, Philippi, Delft, Lavender Hill - high hijack risk</li>
+                    </ul>
+                    <ul class="space-y-2">
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i><b>Driver Brief:</b> No isolated stops, doors locked always, no night driving Bo-Kaap narrow after 9pm, keep to main roads</li>
+                        <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i><b>Tourist safety = 5-star review.</b> 1 bad shortcut = business finished. Families book safe companies.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="bg-amber-50 rounded-2xl p-6 border-2 border-amber-300">
-                <h3 class="font-extrabold text-sm"><i class="fa-solid fa-piggy-bank text-amber-600 mr-2"></i>Option B: 100% Upfront = 5% Discount - Peace of Mind</h3>
-                <div class="mt-4 space-y-2 text-xs">
-                    <div class="flex justify-between bg-white p-3 rounded-xl border"><span>Sedan R2,800 → You Pay</span><span class="font-extrabold text-lg text-amber-700">R2,660 (Save R140)</span></div>
-                    <div class="flex justify-between bg-white p-3 rounded-xl border"><span>SUV R3,500 → You Pay</span><span class="font-extrabold text-lg text-amber-700">R3,325 (Save R175)</span></div>
-                    <div class="flex justify-between bg-white p-3 rounded-xl border"><span>Quantum R4,800 → You Pay</span><span class="font-extrabold text-lg text-amber-700">R4,560 (Save R240)</span></div>
-                    <p class="text-[11px] text-slate-600">Why 5% off? You pay admin once, owner gets full cash, no chasing. Many Europeans prefer pay all at once.</p>
+            <div id="payment" class="lg:col-span-5 bg-slate-900 rounded-[20px] p-6 text-white">
+                <h3 class="font-extrabold text-[14px] flex items-center gap-2"><i class="fa-solid fa-handshake text-amber-400"></i>Payment Options - Your Choice (No Overcharge)</h3>
+                <div class="mt-4 space-y-3">
+                    <div class="bg-white/10 border border-white/10 rounded-xl p-3.5 flex justify-between items-center">
+                        <div><div class="font-bold text-[13px]">Option A: 50% / 50% Split</div><div class="text-[11px] text-slate-300 mt-1">Most popular - 50% booking secures car+fuel, 50% last day morning. 1-day: 50% booking + 50% at pickup.</div></div>
+                        <div class="text-[12px] font-extrabold bg-white text-slate-900 px-3 py-1.5 rounded-full">SAFE</div>
+                    </div>
+                    <div class="bg-amber-400 text-slate-900 rounded-xl p-3.5 flex justify-between items-center">
+                        <div><div class="font-extrabold text-[13px]">Option B: 100% Upfront = 5% OFF</div><div class="text-[11px] text-slate-800 mt-1 font-medium">Sedan R2,800 → R2,660 (Save R140) • SUV R3,500 → R3,325 • Peace of mind, done.</div></div>
+                        <div class="text-[12px] font-extrabold bg-slate-900 text-amber-400 px-3 py-1.5 rounded-full">-5%</div>
+                    </div>
                 </div>
+                <p class="text-[11px] text-slate-400 mt-4">Payment: EFT / Cash / Card link. Owner gets fuel money upfront from your 50%. Protects you & owner.</p>
             </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 mt-6 bg-slate-900 text-white rounded-2xl p-5 flex flex-col md:flex-row gap-4 items-center">
-            <div class="flex-1"><h4 class="font-bold text-sm"><i class="fa-solid fa-shield-halved text-emerald-400 mr-2"></i>Safe Routes Only - No Shortcuts Through High Crime Areas</h4><p class="text-xs text-slate-300 mt-1">We use N2, M65 Chapman's Peak toll road, Victoria Road Camps Bay, Ou Kaapse Weg - tourist police patrolled. No shortcuts via Nyanga, Lavender Hill, Delft, Gugulethu interior. Safety > saving 5 mins.</p></div>
-            <div class="text-xs bg-white/10 p-3 rounded-xl"><b class="text-amber-300">Driver Brief:</b> No isolated stops, doors locked, no night shortcut Bo-Kaap after 9pm</div>
         </div>
     </section>
 
+    <!-- DAY RATES -->
     <section id="rates" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10">
-            <h2 class="text-3xl font-extrabold">Day Rental - Choose Your Payment</h2>
-            <p class="text-slate-500 text-sm mt-2">Owner cost R1,800-2,200/day → Your profit R800-1,200/day | 8am-7pm flat, unlimited stops, safe routes</p>
+        <div class="text-center mb-10 max-w-3xl mx-auto">
+            <span class="inline-block bg-emerald-600 text-white text-[11px] font-extrabold px-3 py-1 rounded-full tracking-wide">OWNER MODEL - YOU PROFIT R800-1,200/DAY</span>
+            <h2 class="text-[28px] sm:text-[34px] font-extrabold tracking-tight mt-4 leading-tight">Day Rental Rates - Safe, Fair, No Extra Hour Till 7pm</h2>
+            <p class="text-slate-500 text-[13px] mt-3">You rent from owner R1,800-2,200/day (car+driver+fuel). You charge client R2,800-3,500/day. Your profit R800-1,200/day with ZERO car. Airport pickup = 1 day, drop-off = 1 day.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-3xl border-2 border-emerald-500 p-6 shadow-xl">
-                <h3 class="font-extrabold text-xl">Sedan + Safe Driver</h3>
-                <p class="text-xs text-slate-500">3 pax - Corolla type</p>
-                <div class="mt-4">
-                    <div><span class="text-3xl font-extrabold">R2,800</span><span class="text-slate-500"> / day</span><span class="ml-2 text-xs bg-slate-100 px-2 py-1 rounded-full font-bold">8am-7pm flat</span></div>
-                    <div class="mt-2 text-xs bg-amber-50 border border-amber-200 p-2 rounded-xl"><b>OR Pay Full Upfront: R2,660</b> (5% OFF - Save R140)</div>
-                    <div class="mt-2 text-xs bg-slate-50 border p-2 rounded-xl"><b>OR 50/50:</b> R1,400 booking + R1,400 last day morning</div>
+            <!-- SEDAN -->
+            <div class="bg-white rounded-[24px] border-2 border-emerald-500 p-6 shadow-xl shadow-emerald-500/10 flex flex-col relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-emerald-600 text-white text-[10px] font-extrabold px-3.5 py-1.5 rounded-bl-xl tracking-wide">MOST BOOKED • SAFE</div>
+                <div class="mt-3">
+                    <h3 class="font-extrabold text-[18px] leading-tight">Standard Sedan + Safe Driver</h3>
+                    <p class="text-[12px] text-slate-500 mt-1">Toyota Corolla / Similar - 3 pax max - PrDP licensed</p>
+                    <div class="mt-5">
+                        <div class="flex items-baseline gap-2"><span class="text-[32px] font-extrabold tracking-tight">R2,800</span><span class="text-slate-500 text-sm">/ day</span><span class="text-[11px] font-bold bg-slate-900 text-white px-2.5 py-1 rounded-full">8am-7pm flat</span></div>
+                        <div class="mt-3 space-y-2">
+                            <div class="text-[12px] bg-amber-50 border border-amber-200 rounded-xl p-2.5 flex justify-between"><span><b>Full Upfront 5% OFF:</b></span><span class="font-extrabold text-amber-700">R2,660 - Save R140</span></div>
+                            <div class="text-[12px] bg-slate-50 border border-slate-200 rounded-xl p-2.5 flex justify-between"><span><b>50/50:</b> R1,400 booking + R1,400 last day</span><span class="font-bold">Fair</span></div>
+                        </div>
+                    </div>
+                    <div class="mt-5 bg-slate-50 rounded-2xl p-4 text-[11px] leading-relaxed text-slate-700 border border-slate-100 space-y-1.5">
+                        <div><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i><b>Includes:</b> Car + PrDP driver + Fuel 200km (extra km R3.50) + Tolls Chapman's Peak + Waiting free unlimited + Bottled water + Biltong snack + Phone cable + Safe routes only</div>
+                        <div><i class="fa-solid fa-xmark text-slate-400 mr-1.5"></i><b>Excludes:</b> Park entrances (pay at gate by card: Cape Point R515 + Boulders R215 = R730 pp) - we don't handle cash</div>
+                        <div class="pt-2.5 border-t border-slate-200 mt-2.5"><i class="fa-solid fa-shield-halved text-emerald-600 mr-1.5"></i><b>Safety:</b> N2, Victoria Rd, Chapman's only - no shortcuts</div>
+                        <div><i class="fa-solid fa-clock text-emerald-600 mr-1.5"></i><b>Hours:</b> 8am-7pm flat no extra. Only after 8pm late night = R200/hr overtime (rare, airport late flights)</div>
+                    </div>
+                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%21%20SEDAN%20R2800%2Fday%20SAFE%20ROUTES%20-%20I%20choose%20payment%3A%20%5B50%2F50%20or%20FULL%205%25%20OFF%20R2660%5D%20for%20DATE%3A%20___%20People%3A%20___" target="_blank" class="mt-6 block w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 rounded-xl font-extrabold text-[13px] text-center shadow-lg shadow-emerald-600/20 transition">Book Sedan - Choose Payment</a>
+                    <p class="text-[10px] text-center text-slate-400 mt-2.5">Driver-partner: PrDP, Operating License, Insurance checked</p>
                 </div>
-                <div class="mt-4 text-[11px] text-slate-600 space-y-1">
-                    <div>✅ Fuel 200km, tolls, waiting free, unlimited stops, biltong snack, safe routes only</div>
-                    <div>❌ Parks: R515+R215 pay at gate by card</div>
-                </div>
-                <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%21%20SEDAN%20R2800%20-%20I%20want%20to%20pay%20%5B50%2F50%20or%20FULL%20with%205%25%20OFF%5D%20for%20DATE%3A%20___" target="_blank" class="mt-5 block w-full bg-emerald-600 text-white py-3.5 rounded-xl font-bold text-center">Book Sedan - Choose Payment</a>
             </div>
-            <div class="bg-white rounded-3xl border border-slate-200 p-6">
-                <h3 class="font-extrabold text-xl">SUV Fortuner + Driver</h3>
-                <p class="text-xs text-slate-500">5-6 pax</p>
-                <div class="mt-4">
-                    <div><span class="text-3xl font-extrabold">R3,500</span><span class="text-slate-500"> / day</span></div>
-                    <div class="mt-2 text-xs bg-amber-50 border border-amber-200 p-2 rounded-xl"><b>Full Upfront: R3,325</b> (Save R175)</div>
-                    <div class="mt-2 text-xs bg-slate-50 border p-2 rounded-xl"><b>50/50:</b> R1,750 + R1,750 last day</div>
+            <!-- SUV -->
+            <div class="bg-white rounded-[24px] border border-slate-200 p-6 flex flex-col">
+                <h3 class="font-extrabold text-[18px] leading-tight">SUV / Fortuner + Safe Driver</h3>
+                <p class="text-[12px] text-slate-500 mt-1">5-6 pax - Luggage, higher view - Best for Peninsula</p>
+                <div class="mt-5">
+                    <div class="flex items-baseline gap-2"><span class="text-[32px] font-extrabold tracking-tight">R3,500</span><span class="text-slate-500 text-sm">/ day</span></div>
+                    <div class="mt-3 space-y-2">
+                        <div class="text-[12px] bg-amber-50 border border-amber-200 rounded-xl p-2.5 flex justify-between"><span><b>Full Upfront:</b></span><span class="font-extrabold text-amber-700">R3,325 - Save R175</span></div>
+                        <div class="text-[12px] bg-slate-50 border border-slate-200 rounded-xl p-2.5"><span><b>50/50:</b> R1,750 + R1,750 last day morning</span></div>
+                    </div>
+                    <div class="mt-5 bg-slate-50 rounded-2xl p-4 text-[11px] leading-relaxed text-slate-700 border">
+                        <div>✅ Same as Sedan + More space, safer at night, better for Chapman's wind</div>
+                        <div>✅ Driver lunch included indirectly (R100 added) - as you said</div>
+                        <div>✅ Unlimited stops, waits free, safe routes only</div>
+                    </div>
+                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%21%20SUV%20R3500%2Fday%20SAFE%20ROUTES%20-%20Payment%3A%20___%20for%20DATE%3A%20___" target="_blank" class="mt-6 block w-full bg-slate-900 hover:bg-black text-white py-3.5 rounded-xl font-extrabold text-[13px] text-center transition">Rent SUV - Choose Payment</a>
                 </div>
-                <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%21%20SUV%20R3500%20-%20Payment%20option%3A%20___%20for%20DATE%3A%20___" target="_blank" class="mt-5 block w-full bg-slate-900 text-white py-3 rounded-xl font-bold text-center">Rent SUV - Choose Payment</a>
             </div>
-            <div class="bg-white rounded-3xl border border-slate-200 p-6">
-                <h3 class="font-extrabold text-xl">Quantum 13 Seater</h3>
-                <p class="text-xs text-slate-500">R369 pp/day for 13 pax</p>
-                <div class="mt-4">
-                    <div><span class="text-3xl font-extrabold">R4,800</span><span class="text-slate-500"> / day</span></div>
-                    <div class="mt-2 text-xs bg-amber-50 border border-amber-200 p-2 rounded-xl"><b>Full Upfront: R4,560</b> (Save R240)</div>
-                    <div class="mt-2 text-xs bg-slate-50 border p-2 rounded-xl"><b>50/50:</b> R2,400 + R2,400 last day</div>
+            <!-- QUANTUM -->
+            <div class="bg-white rounded-[24px] border border-slate-200 p-6 flex flex-col">
+                <h3 class="font-extrabold text-[18px] leading-tight">Quantum 13 Seater + Driver</h3>
+                <p class="text-[12px] text-slate-500 mt-1">Group tours - 10-13 pax = R369 pp/day only</p>
+                <div class="mt-5">
+                    <div class="flex items-baseline gap-2"><span class="text-[32px] font-extrabold tracking-tight">R4,800</span><span class="text-slate-500 text-sm">/ day</span></div>
+                    <div class="mt-3 space-y-2">
+                        <div class="text-[12px] bg-amber-50 border border-amber-200 rounded-xl p-2.5 flex justify-between"><span><b>Full Upfront:</b></span><span class="font-extrabold text-amber-700">R4,560 - Save R240</span></div>
+                        <div class="text-[12px] bg-slate-50 border border-slate-200 rounded-xl p-2.5"><span><b>50/50:</b> R2,400 + R2,400 last day</span></div>
+                    </div>
+                    <div class="mt-5 bg-slate-50 rounded-2xl p-4 text-[11px] leading-relaxed text-slate-700 border">✅ Best for church groups, family reunions, corporate - share cost<br>✅ 13 pax = R369 pp/day only - cheapest per person<br>✅ Safe routes, unlimited stops, driver waits while group shops</div>
+                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%21%20Quantum%20R4800%2Fday%20SAFE%20ROUTES%20-%20Payment%3A%20___%20for%20DATE%3A%20___" target="_blank" class="mt-6 block w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 py-3.5 rounded-xl font-extrabold text-[13px] text-center transition">Rent Quantum - Choose Payment</a>
                 </div>
-                <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%21%20Quantum%20R4800%20-%20Payment%3A%20___%20for%20DATE%3A%20___" target="_blank" class="mt-5 block w-full bg-emerald-50 text-emerald-700 py-3 rounded-xl font-bold text-center">Rent Quantum</a>
             </div>
         </div>
-
-        <div class="mt-10 bg-white border rounded-3xl p-6">
-            <h4 class="font-extrabold text-center mb-4">How to Stand Out With This Payment Choice - Message to Hotels:</h4>
-            <p class="text-xs text-slate-600 bg-slate-50 p-4 rounded-xl border italic">"Hi, Afrika Travel & Tours - Safe Routes Only (no shortcuts through high crime), Unlimited Stops 8am-7pm flat, Driver waits free. Flexible payment: 50% booking + 50% last day OR full upfront with 5% discount. Sedan R2,800/day or R2,660 upfront. We are local driver-partner community, vetted PrDP drivers. 10% commission for your reception per booking. Safe, fair, no overcharge."</p>
+        <!-- PRICE MATCH -->
+        <div class="mt-10 bg-slate-900 rounded-[20px] p-6 md:p-7 flex flex-col md:flex-row items-center justify-between gap-5">
+            <div class="text-white flex-1">
+                <h4 class="font-extrabold text-[15px] flex items-center gap-2"><i class="fa-solid fa-award text-amber-400"></i>Price Match + R100 Less Guarantee - We Are Community Based, Low Overhead</h4>
+                <p class="text-slate-300 text-[12px] mt-1.5 leading-relaxed">Found cheaper day rental with same car + PrDP driver? Send screenshot on WhatsApp, we beat it by R100. We don't own fleet, we support local driver-partners.</p>
+            </div>
+            <a href="https://wa.me/27837327440?text=Hi%20I%20found%20cheaper%20day%20rental%20-%20Price%20Match%20%2B%20R100%20less%20please%20-%20Screenshot%20attached" target="_blank" class="bg-amber-400 hover:bg-amber-300 text-slate-900 px-6 py-3 rounded-xl font-extrabold text-[13px] whitespace-nowrap transition">Claim Price Match + R100 Less</a>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs">
-        <p class="font-bold text-white mb-1">Afrika Travel & Tours - Safe Routes Only | 50/50 OR Full Upfront 5% OFF | 8am-7pm Flat | Unlimited Stops</p>
-        <p>Tour operator: Vetted driver-partners (PrDP, Operating License, Insurance) | No dangerous shortcuts | © 2026 | +27 83 732 7440</p>
+    <!-- WHAT 1 DAY COVERS -->
+    <section id="examples" class="py-14 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-[22px] font-extrabold text-center">What Can You Do in 1 Day Rental? (Same Car + Same Driver Waits)</h2>
+            <p class="text-center text-[12px] text-slate-500 mt-2 mb-8">All examples 8am-7pm flat, unlimited stops, safe routes only, no extra hour fee</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="bg-slate-50 rounded-[18px] p-5 border border-slate-100">
+                    <h4 class="font-extrabold text-[13px]"><i class="fa-solid fa-map-pin text-emerald-600 mr-1.5"></i>Day Example: Peninsula Loop (Most Booked)</h4>
+                    <p class="text-[12px] text-slate-600 mt-2.5 leading-relaxed">08:00 hotel pickup → Hout Bay → Chapman's Peak (toll included, safe road) → Cape Point (pay R515 at gate by card) → Boulders Penguins R215 → Lunch → Muizenberg colorful houses → 18:30 drop hotel. Driver waits at each stop free. Safe route via Ou Kaapse Weg back.</p>
+                    <div class="mt-3.5 bg-white border rounded-xl p-2.5 text-[11px]"><b class="text-emerald-700">Total:</b> R2,800 car+driver + R730 parks = R3,530 / 3 pax = R1,176 pp + 5% OFF if full upfront = R1,117 pp</div>
+                </div>
+                <div class="bg-slate-50 rounded-[18px] p-5 border border-slate-100">
+                    <h4 class="font-extrabold text-[13px]"><i class="fa-solid fa-bag-shopping text-emerald-600 mr-1.5"></i>Day Example: Shopping + City + Table Mountain</h4>
+                    <p class="text-[12px] text-slate-600 mt-2.5 leading-relaxed">09:00 pickup → V&A Waterfront shopping (driver waits 2hrs free at parking) → Table Mountain cableway R400 pay at gate (optional) → Bo-Kaap → Camps Bay sunset → 19:00 drop. No extra hour fee till 7pm. Safe routes via Victoria Road.</p>
+                    <div class="mt-3.5 bg-white border rounded-xl p-2.5 text-[11px]"><b class="text-emerald-700">Total:</b> R2,800 flat - unlimited stops</div>
+                </div>
+                <div class="bg-slate-50 rounded-[18px] p-5 border border-slate-100">
+                    <h4 class="font-extrabold text-[13px]"><i class="fa-solid fa-plane text-emerald-600 mr-1.5"></i>Day Example: Airport Pickup + Winelands</h4>
+                    <p class="text-[12px] text-slate-600 mt-2.5 leading-relaxed">Driver at CPT airport with name board → Pickup 10am → Luggage to hotel → Stellenbosch wine tasting (2 tastings if you arrange with farms) → Drop hotel 18:30. Counts as 1 full day rental - no separate airport transfer fee.</p>
+                    <div class="mt-3.5 bg-white border rounded-xl p-2.5 text-[11px]"><b class="text-emerald-700">Total:</b> R2,800 flat - counts as day rental</div>
+                </div>
+            </div>
+            <div class="mt-8 bg-emerald-600 rounded-[18px] p-5 text-center text-white">
+                <h4 class="font-extrabold text-[14px]">How to Get Business Easily - Message to Hotels / Airbnb Hosts:</h4>
+                <p class="text-[12px] text-emerald-100 mt-2 max-w-4xl mx-auto leading-relaxed italic">"Hi, Afrika Travel & Tours - Safe Routes Only (no shortcuts through high crime areas, official N2/Chapman's routes), Unlimited Stops 8am-7pm flat no extra hour, Driver waits free. Flexible payment: 50% booking + 50% last day OR full upfront with 5% discount. Sedan R2,800/day or R2,660 upfront. Vetted PrDP driver-partners community. 10% commission for your reception per booking. Safe, fair, no overcharge."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-[12px] leading-relaxed">
+                <div>
+                    <div class="flex items-center gap-2.5 mb-3">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center text-white"><i class="fa-solid fa-compass"></i></div>
+                        <span class="font-extrabold text-white text-[15px]">Afrika Travel & Tours</span>
+                    </div>
+                    <p class="text-slate-400">Tour operator - Driver-partner network. We connect clients with vetted local driver-partners with PrDP, Operating License for tourist transport, roadworthy, insurance covering paying passengers. We coordinate, you enjoy. Safe routes only.</p>
+                    <p class="mt-3 font-bold text-white">Owner Model: You rent from owner R1,800-2,200/day → You charge R2,800-3,500/day = Profit R800-1,200/day with zero car.</p>
+                </div>
+                <div>
+                    <h4 class="font-extrabold text-white text-[13px] mb-3">Business Model Checklist (Before Booking Owner)</h4>
+                    <ul class="space-y-1.5">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>License disc valid + Roadworthy certificate</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Operating License for tourist transport (NPTR) - critical</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Driver PrDP + Code B license photo + ID</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Insurance covers paying passengers (not private)</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Agreed daily rate: R____ + fuel 200km included?</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>WhatsApp group: "Afrika Driver Partners" - 5-10 drivers</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-extrabold text-white text-[13px] mb-3">Contact & Terms</h4>
+                    <p><i class="fa-solid fa-location-dot mr-1.5"></i>56 Parklands Main Rd, Cape Town, 7441</p>
+                    <p class="mt-1.5"><i class="fa-brands fa-whatsapp mr-1.5"></i>+27 83 732 7440</p>
+                    <p class="mt-1.5"><i class="fa-solid fa-clock mr-1.5"></i>8am-7pm flat, no extra hour till 7pm, after 8pm R200/hr rare</p>
+                    <p class="mt-3 bg-white/5 border border-white/10 rounded-xl p-3"><b class="text-white">Payment:</b> Option A 50% booking + 50% last day morning (1-day: 50% at pickup) OR Option B 100% upfront = 5% discount. EFT/Cash/Card link. 24h free cancellation.</p>
+                    <p class="mt-3 text-[11px]">© 2026 Afrika Travel and Tours - Safe Routes Only | No dangerous shortcuts | Community based</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%20-%20I%20want%2050%2F50%20or%20FULL%20upfront%20option" target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl text-2xl z-50"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%20-%20SAFE%20ROUTES%20-%20I%20choose%20%5B50%2F50%20or%20FULL%205%25%20OFF%5D%20for%20DATE%3A%20___" target="_blank" class="fixed bottom-5 right-5 bg-[#25D366] hover:bg-[#128C7E] text-white w-[56px] h-[56px] rounded-full flex items-center justify-center shadow-[0_8px_24px_rgba(37,211,102,0.4)] text-[26px] z-[60] transition-all hover:scale-105">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 </body>
-                        </html>
+    </html>
