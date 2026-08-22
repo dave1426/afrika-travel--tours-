@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afrika Travel and Tours | Private Car + Driver Per Day | Cape Town</title>
     
-    <!-- Favicon (Using your uploaded image file) -->
+    <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="1787390544811.jpg">
 
-    <!-- Open Graph / Facebook & WhatsApp Link Preview Meta Tags -->
+    <!-- Open Graph / Meta Tags -->
     <meta property="og:title" content="Afrika Travel and Tours | Private Car + Driver Per Day">
     <meta property="og:description" content="Private car with professional driver per day 8am-7pm. Unlimited stops, airport transfers, Peninsula, Winelands, City tours. From R2800/day.">
     <meta property="og:image" content="1787390544811.jpg">
@@ -19,218 +19,406 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']}}}}</script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            900: '#064e3b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>html{scroll-behavior:smooth}</style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
-    <div class="bg-slate-900 text-white text-center py-2.5 px-4 text-[11px] font-bold tracking-wide">
-        <span class="inline-flex items-center gap-5 flex-wrap justify-center">
-            <span><i class="fa-solid fa-shield-halved text-emerald-400 mr-1.5"></i>Licensed Tourist Transport</span>
+    <!-- Top Announcement Bar -->
+    <div class="bg-slate-900 text-white text-center py-2.5 px-4 text-[11px] font-bold tracking-wide border-b border-slate-800">
+        <span class="inline-flex items-center gap-4 sm:gap-6 flex-wrap justify-center">
+            <span><i class="fa-solid fa-shield-halved text-brand-400 mr-1.5"></i>Licensed Tourist Transport</span>
             <span class="hidden md:inline text-slate-600">|</span>
-            <span><i class="fa-solid fa-infinity text-emerald-400 mr-1.5"></i>Unlimited Stops 8am-7pm</span>
+            <span><i class="fa-solid fa-infinity text-brand-400 mr-1.5"></i>Unlimited Stops (8am - 7pm)</span>
             <span class="hidden md:inline text-slate-600">|</span>
-            <span class="text-amber-300"><i class="fa-solid fa-credit-card mr-1.5"></i>Pay 50/50 or Full Upfront Save 5%</span>
+            <span class="text-amber-300"><i class="fa-solid fa-bolt mr-1.5"></i>Pay 50/50 or Save 5% Upfront</span>
         </span>
     </div>
 
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
-            <a href="#home" class="flex items-center space-x-3">
-                <!-- Custom Logo Integration from your GitHub repo -->
-                <div class="w-12 h-12 flex items-center justify-center overflow-hidden">
-                    <img src="1787390544811.jpg" alt="Afrika Travel and Tours Logo" class="w-full h-full object-contain rounded-xl">
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[76px] flex items-center justify-between">
+            <a href="#home" class="flex items-center space-x-3 group">
+                <div class="w-12 h-12 flex items-center justify-center overflow-hidden rounded-xl shadow-xs border border-slate-100 bg-slate-900 group-hover:scale-105 transition">
+                    <img src="1787390544811.jpg" alt="Afrika Travel and Tours Logo" class="w-full h-full object-cover">
                 </div>
                 <div class="flex flex-col">
                     <span class="text-[17px] font-extrabold tracking-tight text-slate-900 leading-tight">AFRIKA</span>
-                    <span class="text-[10px] font-bold tracking-wider text-emerald-600">TOURS AND TRAVEL</span>
+                    <span class="text-[10px] font-bold tracking-wider text-brand-600">TOURS AND TRAVEL</span>
                 </div>
             </a>
             <nav class="hidden lg:flex items-center space-x-8 font-semibold text-[13px] text-slate-600">
-                <a href="#home" class="text-emerald-600">Home</a>
-                <a href="#tours" class="hover:text-emerald-600">Tours & Routes</a>
-                <a href="#rates" class="hover:text-emerald-600">Day Rates</a>
-                <a href="#contact" class="hover:text-emerald-600">Contact</a>
+                <a href="#home" class="text-brand-600 hover:text-brand-600 transition">Home</a>
+                <a href="#tours" class="hover:text-brand-600 transition">Tours & Routes</a>
+                <a href="#rates" class="hover:text-brand-600 transition">Day Rates & Fleet</a>
+                <a href="#contact" class="hover:text-brand-600 transition">Contact</a>
             </nav>
-            <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%20and%20Tours%2C%20I%20would%20like%20to%20book%20a%20car%20with%20driver" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl font-bold text-[13px] shadow-lg"><i class="fa-brands fa-whatsapp"></i> Book Now</a>
+            <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%20and%20Tours%2C%20I%20would%20like%20to%20book%20a%20car%20with%20driver" target="_blank" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-5 py-2.5 rounded-xl font-bold text-[13px] shadow-md hover:shadow-lg transition">
+                <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Booking
+            </a>
         </div>
     </header>
 
-    <section id="home" class="relative pt-12 pb-20 bg-slate-900 overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-30"><img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&q=80&w=2000" alt="Cape Town Peninsula" class="w-full h-full object-cover"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-slate-900/20 z-0"></div>
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-12 pb-24 bg-slate-900 overflow-hidden text-white">
+        <div class="absolute inset-0 z-0 opacity-25">
+            <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&q=80&w=2000" alt="Cape Town Background" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40 z-0"></div>
+        
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7">
-                    <div class="inline-flex items-center gap-2 bg-white text-slate-900 px-4 py-1.5 rounded-full text-[11px] font-extrabold mb-5"><i class="fa-solid fa-star text-amber-500"></i> PRIVATE CAR + PROFESSIONAL DRIVER • CAPE TOWN</div>
-                    <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-[1.05] mb-5">Private Car + Driver <span class="text-emerald-400">Per Day</span><br><span class="text-2xl sm:text-3xl font-bold text-slate-200">8am-7pm Flat • Unlimited Stops</span></h1>
-                    <p class="text-slate-300 text-[15px] leading-relaxed mb-7 max-w-2xl">One flat day rate for all your needs: hotel transfers, airport pickup and drop-off, shopping trips, business meetings, and full-day sightseeing. Your driver stays with the vehicle and waits for you at each stop. No extra charge until 7pm.</p>
-                    <div class="flex flex-wrap gap-3 mb-8">
-                        <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20would%20like%20to%20book%20a%20car%20with%20driver%20per%20day%20for%20DATE%3A%20___%20PAX%3A%20___" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-xl">Check Availability on WhatsApp</a>
-                        <span class="inline-flex items-center bg-white/10 backdrop-blur border border-white/20 text-white px-4 py-3.5 rounded-xl text-xs font-bold"><i class="fa-solid fa-shield-halved text-emerald-400 mr-2"></i>Free Cancellation 24 Hours</span>
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/15 text-amber-300 px-4 py-1.5 rounded-full text-[11px] font-extrabold mb-6 tracking-wide">
+                        <i class="fa-solid fa-star"></i> PRIVATE CAR + PROFESSIONAL DRIVER • CAPE TOWN
                     </div>
-                    <div class="bg-white rounded-2xl p-4 grid grid-cols-3 gap-3 text-center max-w-lg shadow-2xl">
-                        <div><div class="font-extrabold text-slate-900">08:00-19:00</div><div class="text-[11px] text-slate-500">Flat Day Rate</div></div>
-                        <div><div class="font-extrabold text-emerald-600">Unlimited</div><div class="text-[11px] text-slate-500">Stops & Waiting</div></div>
-                        <div><div class="font-extrabold text-slate-900">Licensed</div><div class="text-[11px] text-slate-500">Tourist Transport</div></div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.08] mb-6">
+                        Your Private Car & Driver <span class="text-brand-400">Per Day</span><br>
+                        <span class="text-2xl sm:text-3xl font-bold text-slate-300">08:00–19:00 Flat • Unlimited Stops</span>
+                    </h1>
+                    <p class="text-slate-300 text-[15px] sm:text-base leading-relaxed mb-8 max-w-2xl font-normal">
+                        One simple daily rate covers everything: airport pickups, scenic coastal routes, wine tastings, business meetings, and shopping trips. Your professional driver stays with the vehicle and waits for you at every single stop. No hidden hourly meters.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-10">
+                        <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20would%20like%20to%20check%20availability%20for%20a%20car%20with%20driver%20on%20DATE%3A%20___" target="_blank" class="bg-brand-600 hover:bg-brand-700 text-white px-7 py-4 rounded-xl font-bold text-sm shadow-xl shadow-brand-900/40 transition flex items-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Check Availability on WhatsApp
+                        </a>
+                        <span class="inline-flex items-center bg-white/5 backdrop-blur border border-white/10 text-slate-200 px-4 py-4 rounded-xl text-xs font-semibold">
+                            <i class="fa-solid fa-check-circle text-brand-400 mr-2"></i>Free 24hr Cancellation
+                        </span>
+                    </div>
+
+                    <!-- Quick Metrics Grid -->
+                    <div class="grid grid-cols-3 gap-3 max-w-lg bg-white/5 backdrop-blur border border-white/10 p-4 rounded-2xl">
+                        <div class="text-center">
+                            <div class="font-extrabold text-white text-sm sm:text-base">08:00 - 19:00</div>
+                            <div class="text-[11px] text-slate-400 font-medium">Flat Daily Span</div>
+                        </div>
+                        <div class="text-center border-x border-white/10">
+                            <div class="font-extrabold text-brand-400 text-sm sm:text-base">Unlimited</div>
+                            <div class="text-[11px] text-slate-400 font-medium">Stops & Waiting</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-extrabold text-white text-sm sm:text-base">Insured</div>
+                            <div class="text-[11px] text-slate-400 font-medium">Permit & Safety</div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Feature Highlights Column -->
                 <div class="lg:col-span-5 grid gap-4">
-                    <div class="bg-white rounded-2xl p-5 shadow-2xl border-l-4 border-emerald-600"><h4 class="font-bold text-sm"><i class="fa-solid fa-infinity text-emerald-600 mr-2"></i>Unlimited Stops - Driver Waits</h4><p class="text-xs text-slate-500 mt-1">Stop for photos, coffee, shopping or meetings. Driver waits in designated parking areas.</p></div>
-                    <div class="bg-white rounded-2xl p-5 shadow-2xl border-l-4 border-slate-900"><h4 class="font-bold text-sm"><i class="fa-solid fa-shield-halved text-slate-900 mr-2"></i>Safe, Licensed & Insured</h4><p class="text-xs text-slate-500 mt-1">All vehicles licensed for tourist transport with professional drivers and passenger insurance.</p></div>
-                    <div class="bg-white rounded-2xl p-5 shadow-2xl border-l-4 border-amber-400"><h4 class="font-bold text-sm"><i class="fa-solid fa-credit-card text-amber-600 mr-2"></i>Flexible Payment</h4><p class="text-xs text-slate-500 mt-1">50% deposit to confirm, 50% on last day. Or pay in full upfront and save 5%.</p></div>
+                    <div class="bg-slate-800/80 backdrop-blur border border-slate-700/80 rounded-2xl p-5 shadow-xl border-l-4 border-l-brand-500">
+                        <h4 class="font-bold text-sm text-white flex items-center gap-2">
+                            <i class="fa-solid fa-infinity text-brand-400"></i> Unlimited Stops & Driver Waiting
+                        </h4>
+                        <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">Hop out for photos, coffee, business meetings, or sightseeing. Your driver securely waits with the car in designated parking zones.</p>
+                    </div>
+                    <div class="bg-slate-800/80 backdrop-blur border border-slate-700/80 rounded-2xl p-5 shadow-xl border-l-4 border-l-sky-400">
+                        <h4 class="font-bold text-sm text-white flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-sky-400"></i> Fully Licensed Tourist Transport
+                        </h4>
+                        <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">Certified operating licenses, comprehensive passenger liability insurance, and experienced local drivers who know every corner of the Cape.</p>
+                    </div>
+                    <div class="bg-slate-800/80 backdrop-blur border border-slate-700/80 rounded-2xl p-5 shadow-xl border-l-4 border-l-amber-400">
+                        <h4 class="font-bold text-sm text-white flex items-center gap-2">
+                            <i class="fa-solid fa-credit-card text-amber-400"></i> Flexible Payment Structure
+                        </h4>
+                        <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">Secure your booking with a 50% deposit and pay the remaining 50% on your final day—or pay 100% upfront to instantly save 5%.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TOURS & ROUTES -->
-    <section id="tours" class="py-16 bg-white">
+    <!-- Tours & Routes Section -->
+    <section id="tours" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto">
-                <span class="inline-block bg-emerald-50 text-emerald-700 text-[11px] font-extrabold px-3 py-1 rounded-full">POPULAR ROUTES & TOURS</span>
-                <h2 class="text-3xl font-extrabold tracking-tight mt-3">Cape Town Tours & Travel Routes</h2>
-                <p class="text-slate-500 text-sm mt-2">All tours are private, per day rental. Same car and driver stays with you 8am-7pm. Park entrance fees payable at gate by card.</p>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block bg-brand-50 text-brand-700 text-[11px] font-extrabold px-3.5 py-1.5 rounded-full tracking-wide">CURATED CAPE TOWN ROUTES</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-3">Popular Private Tours & Travel Routes</h2>
+                <p class="text-slate-500 text-sm mt-3 leading-relaxed">All routes are customized day rentals. The exact same vehicle and driver stay exclusively with you from 08:00 to 19:00. Park entrance or tasting fees are settled directly at venues.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition">
-                    <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-mountain-sun"></i></div>
-                    <h3 class="font-extrabold text-[15px]">Cape Peninsula Full Day</h3>
-                    <p class="text-[11px] font-bold text-emerald-600 mt-1">Most Booked • 8am-7pm</p>
-                    <p class="text-xs text-slate-600 mt-3 leading-relaxed"><b>Route:</b> Sea Point → Clifton → Camps Bay → Hout Bay → Chapman's Peak Drive → Noordhoek → Cape Point Nature Reserve → Cape of Good Hope → Boulders Beach Penguins → Simon's Town → Muizenberg.</p>
-                    <div class="mt-4 bg-white rounded-xl p-3 border text-[11px]"><b>Includes:</b> Car+driver+fuel 200km+Chapman's toll+waiting<br><b>Excludes:</b> Cape Point R460, Boulders R185</div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20Peninsula%20Full%20Day%20Tour%20for%20DATE%3A%20___" target="_blank" class="mt-4 inline-block text-xs font-bold text-emerald-700">Book Peninsula Tour →</a>
-                </div>
-                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition">
-                    <div class="w-12 h-12 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-wine-glass"></i></div>
-                    <h3 class="font-extrabold text-[15px]">Cape Winelands</h3>
-                    <p class="text-[11px] font-bold text-purple-600 mt-1">Wine Tasting • 9am-6pm</p>
-                    <p class="text-xs text-slate-600 mt-3 leading-relaxed"><b>Route:</b> Stellenbosch → Franschhoek → Paarl. Visit 3-4 wine estates, cellar tours, cheese pairing. Driver waits while you taste.</p>
-                    <div class="mt-4 bg-white rounded-xl p-3 border text-[11px]"><b>Popular Estates:</b> Fairview, Spice Route, Babylonstoren, La Motte<br><b>Tastings:</b> R80-R150 per estate pay at venue</div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20Winelands%20Tour%20for%20DATE%3A%20___" target="_blank" class="mt-4 inline-block text-xs font-bold text-purple-700">Book Winelands Tour →</a>
-                </div>
-                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition">
-                    <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-city"></i></div>
-                    <h3 class="font-extrabold text-[15px]">City Tour & Table Mountain</h3>
-                    <p class="text-[11px] font-bold text-blue-600 mt-1">Half Day Option Available</p>
-                    <p class="text-xs text-slate-600 mt-3 leading-relaxed"><b>Route:</b> Table Mountain Cableway → Bo-Kaap → Company Gardens → Castle → V&A Waterfront → Camps Bay → Lion's Head viewpoint.</p>
-                    <div class="mt-4 bg-white rounded-xl p-3 border text-[11px]"><b>Optional:</b> Table Mountain cableway R420 return (weather dependent)</div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20City%20%26%20Table%20Mountain%20Tour%20for%20DATE%3A%20___" target="_blank" class="mt-4 inline-block text-xs font-bold text-blue-700">Book City Tour →</a>
-                </div>
-                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition">
-                    <div class="w-12 h-12 rounded-2xl bg-sky-600 text-white flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-water"></i></div>
-                    <h3 class="font-extrabold text-[15px]">Hermanus Whale Route</h3>
-                    <p class="text-[11px] font-bold text-sky-600 mt-1">Seasonal Jun-Nov • Full Day</p>
-                    <p class="text-xs text-slate-600 mt-3 leading-relaxed"><b>Route:</b> Gordon's Bay → Betty's Bay penguins → Hermanus (whale watching) → Hemel-en-Aarde wine valley → return via N2.</p>
-                    <div class="mt-4 bg-white rounded-xl p-3 border text-[11px]"><b>Best Season:</b> Whales June-November. Boat tour R1200 pp optional, land viewing free.</div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20Hermanus%20Whale%20Route%20for%20DATE%3A%20___" target="_blank" class="mt-4 inline-block text-xs font-bold text-sky-700">Book Whale Route →</a>
-                </div>
-                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition">
-                    <div class="w-12 h-12 rounded-2xl bg-amber-600 text-white flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-paw"></i></div>
-                    <h3 class="font-extrabold text-[15px]">Big 5 Safari Day Trip</h3>
-                    <p class="text-[11px] font-bold text-amber-600 mt-1">Aquila / Inverdoorn • 7am-6pm</p>
-                    <p class="text-xs text-slate-600 mt-3 leading-relaxed"><b>Route:</b> Early pickup 07:00 → Aquila Private Game Reserve (2hr drive) → Welcome drink + game drive 2-3hrs → Lunch buffet → Free time → Return 18:00.</p>
-                    <div class="mt-4 bg-white rounded-xl p-3 border text-[11px]"><b>Safari Fee:</b> Aquila R2,350 pp includes game drive + lunch. Transport R2800/day separate.</div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20Aquila%20Safari%20Day%20Trip%20for%20DATE%3A%20___" target="_blank" class="mt-4 inline-block text-xs font-bold text-amber-700">Book Safari Trip →</a>
-                </div>
-                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition">
-                    <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-bag-shopping"></i></div>
-                    <h3 class="font-extrabold text-[15px]">Shopping & Airport Transfers</h3>
-                    <p class="text-[11px] font-bold text-slate-700 mt-1">Flexible • Per Day Rental</p>
-                    <p class="text-xs text-slate-600 mt-3 leading-relaxed"><b>Options:</b> V&A Waterfront, Canal Walk, Cape Quarter, Greenmarket Square. Airport pickup counts as full day - includes hotel drop + any stops same day.</p>
-                    <div class="mt-4 bg-white rounded-xl p-3 border text-[11px]"><b>Ideal for:</b> Business, shopping, medical appointments, hotel-to-hotel transfers</div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20Shopping%20%2B%20Airport%20Transfer%20for%20DATE%3A%20___" target="_blank" class="mt-4 inline-block text-xs font-bold text-slate-800">Book Transfer →</a>
-                </div>
-            </div>
-
-            <div class="mt-10 bg-slate-900 rounded-3xl p-7 text-white">
-                <h3 class="font-extrabold text-lg"><i class="fa-solid fa-road text-emerald-400 mr-2"></i>Multi-Day Tours - Simple Pricing</h3>
-                <div class="grid md:grid-cols-2 gap-6 mt-4">
-                    <div class="text-sm text-slate-300 leading-relaxed">
-                        <p>Need a car and driver for 2, 3 or 5 days?</p>
-                        <p class="mt-2"><b class="text-white">How it works:</b> You pay the daily rate x number of days. Example: Sedan R2,800 x 3 days = R8,400 total. Same driver and car stays with you.</p>
-                        <p class="mt-2"><b class="text-white">Example 3-day:</b><br>Day 1: Peninsula Full Day<br>Day 2: Winelands<br>Day 3: City + Airport drop</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Peninsula Tour -->
+                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-mountain-sun"></i></div>
+                        <h3 class="font-extrabold text-lg text-slate-900">Cape Peninsula Full Day</h3>
+                        <p class="text-[11px] font-bold text-brand-600 mt-0.5 tracking-wide">MOST BOOKED ROUTE • 08:00 - 19:00</p>
+                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Clifton, Camps Bay, Hout Bay, Chapman's Peak Drive, Noordhoek, Cape Point Nature Reserve, Cape of Good Hope, Boulders Beach Penguins, Simon's Town, Muizenberg.</p>
+                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                            <span class="font-bold text-slate-900">Includes:</span> Car, driver, fuel (200km), Chapman's toll & waiting time.<br>
+                            <span class="font-bold text-slate-900">Gate Fees:</span> Cape Point ~R460, Boulders ~R185 pp.
+                        </div>
                     </div>
-                    <div class="bg-white/10 border border-white/10 rounded-2xl p-4 text-xs leading-relaxed">
-                        <b class="text-amber-300">Payment for multi-day:</b><br>
-                        • 50% deposit on booking to confirm<br>
-                        • 50% on morning of your last day<br><br>
-                        <b class="text-amber-300">Or save 5%:</b><br>
-                        • Pay 100% upfront at once and save 5% on total<br><br>
-                        Fuel 200km per day included, extra km R3.50. Tolls included. Park fees pay at gate.
+                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Cape%20Peninsula%20Full%20Day%20Tour%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-brand-700 hover:text-brand-800">
+                        Book Peninsula Tour <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Winelands Tour -->
+                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-wine-glass"></i></div>
+                        <h3 class="font-extrabold text-lg text-slate-900">Cape Winelands Experience</h3>
+                        <p class="text-[11px] font-bold text-purple-600 mt-0.5 tracking-wide">WINE TASTING & ESTATES • 09:00 - 18:00</p>
+                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Stellenbosch, Franschhoek, and Paarl. Explore world-class vineyards, historical Cape Dutch architecture, cellar tours, and gourmet cheese pairings.</p>
+                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                            <span class="font-bold text-slate-900">Top Estates:</span> Fairview, Babylonstoren, La Motte, Spice Route.<br>
+                            <span class="font-bold text-slate-900">Tastings:</span> R80 – R150 per estate payable at venue.
+                        </div>
+                    </div>
+                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Winelands%20Tour%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-purple-700 hover:text-purple-800">
+                        Book Winelands Tour <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- City & Table Mountain -->
+                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-city"></i></div>
+                        <h3 class="font-extrabold text-lg text-slate-900">City Tour & Table Mountain</h3>
+                        <p class="text-[11px] font-bold text-blue-600 mt-0.5 tracking-wide">CULTURE & LANDMARKS • Flexible Duration</p>
+                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Table Mountain Cableway, colorful Bo-Kaap houses, Company Gardens, Castle of Good Hope, V&A Waterfront, and panoramic views from Lion's Head.</p>
+                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                            <span class="font-bold text-slate-900">Optional Add-on:</span> Table Mountain cableway return ticket (~R420 pp, weather permitting).
+                        </div>
+                    </div>
+                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20City%20%26%20Table%20Mountain%20Tour%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-blue-700 hover:text-blue-800">
+                        Book City Tour <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Hermanus Whale Route -->
+                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-sky-600 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-water"></i></div>
+                        <h3 class="font-extrabold text-lg text-slate-900">Hermanus Whale Route</h3>
+                        <p class="text-[11px] font-bold text-sky-600 mt-0.5 tracking-wide">SEASONAL (JUN-NOV) • Full Day</p>
+                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Scenic coastal drive via Gordon's Bay, Betty's Bay penguin colony at Stony Point, Hermanus cliff paths for land-based whale watching, and Hemel-en-Aarde wine valley.</p>
+                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                            <span class="font-bold text-slate-900">Highlights:</span> Land viewing is free; optional boat-based whale watching tours available.
+                        </div>
+                    </div>
+                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Hermanus%20Whale%20Route%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-sky-700 hover:text-sky-800">
+                        Book Whale Route <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Safari Day Trip -->
+                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-amber-600 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-paw"></i></div>
+                        <h3 class="font-extrabold text-lg text-slate-900">Big 5 Safari Day Trip</h3>
+                        <p class="text-[11px] font-bold text-amber-600 mt-0.5 tracking-wide">AQUILA / INVERDOORN • 07:00 - 18:00</p>
+                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Early morning departure to a malaria-free private game reserve, welcome drinks, 2–3 hour guided open-vehicle Big 5 game drive, lunch buffet, and return drive to Cape Town.</p>
+                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                            <span class="font-bold text-slate-900">Safari Package:</span> Reserve fees (~R2,350 pp) include game drive & lunch. Transport rate separate.
+                        </div>
+                    </div>
+                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Safari%20Day%20Trip%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-amber-700 hover:text-amber-800">
+                        Book Safari Trip <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Airport & Shopping -->
+                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-bag-shopping"></i></div>
+                        <h3 class="font-extrabold text-lg text-slate-900">Shopping & Airport Transfers</h3>
+                        <p class="text-[11px] font-bold text-slate-700 mt-0.5 tracking-wide">FLEXIBLE SCHEDULING • Per Day Rental</p>
+                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Options:</b> Direct airport meet-and-greet, hotel-to-hotel transfers, V&A Waterfront, Canal Walk, Greenmarket Square craft market, or bespoke business itineraries.</p>
+                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                            <span class="font-bold text-slate-900">Note:</span> Airport pickup counts as your daily rental, allowing extra stops on the same day at no extra charge.
+                        </div>
+                    </div>
+                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20Airport%20Transfer%20%26%20Shopping%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-slate-900 hover:text-black">
+                        Book Transfer <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Multi-Day Banner -->
+            <div class="mt-12 bg-slate-900 rounded-3xl p-8 text-white shadow-xl">
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7">
+                        <span class="text-brand-400 text-xs font-extrabold tracking-wider uppercase">SEAMLESS EXTENDED TRAVEL</span>
+                        <h3 class="text-2xl font-extrabold mt-1">Multi-Day Private Tours Made Simple</h3>
+                        <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                            Need a dedicated car and driver for 3, 5, or 7 days? Simply multiply the daily rate by your number of days. Your driver remains with you throughout your stay, ensuring consistency, total safety, and complete flexibility.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-5 bg-white/10 border border-white/10 rounded-2xl p-5 text-xs space-y-2.5">
+                        <div class="font-bold text-amber-300 text-sm mb-1"><i class="fa-solid fa-calculator mr-1.5"></i> Multi-Day Calculation Example (3 Days Sedan):</div>
+                        <div class="flex justify-between text-slate-200"><span>Standard Rate (R2,800 x 3 days):</span> <b>R8,400 total</b></div>
+                        <div class="flex justify-between text-amber-300"><span>Pay Full Upfront (Save 5%):</span> <b>R7,980 total</b></div>
+                        <div class="text-slate-400 text-[11px] pt-1 border-t border-white/10">Includes 200km per day, all tolls, and driver waiting time.</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="rates" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-10">
-            <h2 class="text-3xl font-extrabold tracking-tight">Day Rental Rates</h2>
-            <p class="text-slate-500 text-sm mt-2">Flat rate covers car, professional driver, fuel for 200km, Chapman's Peak toll and waiting time.</p>
+    <!-- Rates & Fleet Section -->
+    <section id="rates" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-slate-100/60 rounded-3xl my-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="inline-block bg-brand-50 text-brand-700 text-[11px] font-extrabold px-3.5 py-1.5 rounded-full tracking-wide">TRANSPARENT PRICING</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 mt-3">Day Rental Rates & Fleet Options</h2>
+            <p class="text-slate-500 text-sm mt-3">Every flat day rate covers your vehicle, professional driver, fuel for the first 200km, Chapman's Peak toll fee, and unlimited waiting time from 08:00 to 19:00.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-3xl border-2 border-emerald-500 p-6 shadow-xl flex flex-col">
-                <span class="bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full self-start">MOST POPULAR</span>
-                <h3 class="font-extrabold text-lg mt-4">Standard Sedan</h3>
-                <p class="text-xs text-slate-500">Up to 3 passengers • Comfortable</p>
-                <div class="mt-4"><span class="text-3xl font-extrabold">R2,800</span><span class="text-slate-500 text-sm"> / day</span><div class="text-xs font-bold text-emerald-600 mt-1">08:00-19:00 • Unlimited stops</div></div>
-                <div class="mt-3 space-y-2 text-xs">
-                    <div class="bg-amber-50 border border-amber-200 rounded-xl p-2.5 flex justify-between"><span>Full upfront</span><b class="text-amber-700">R2,660 - Save 5%</b></div>
-                    <div class="bg-slate-50 border rounded-xl p-2.5"><b>Split:</b> R1,400 + R1,400 last day</div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            <!-- Sedan -->
+            <div class="bg-white rounded-3xl border-2 border-brand-500 p-8 shadow-xl flex flex-col justify-between relative">
+                <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-600 text-white text-[10px] font-extrabold px-4 py-1.5 rounded-full shadow-xs tracking-wider">
+                    MOST POPULAR CHOICE
                 </div>
-                <ul class="mt-5 text-xs text-slate-600 space-y-2">
-                    <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>Fuel 200km, tolls, waiting included</li>
-                    <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>Licensed driver + passenger insurance</li>
-                    <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>Airport transfer counts as 1 day</li>
-                </ul>
-                <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20would%20like%20to%20book%20Sedan%20R2800%2Fday" target="_blank" class="mt-6 block w-full bg-emerald-600 text-white py-3.5 rounded-xl font-bold text-center text-sm">Book Sedan - 3 Pax</a>
+                <div>
+                    <h3 class="font-extrabold text-xl text-slate-900 mt-2">Standard Sedan</h3>
+                    <p class="text-xs text-slate-500 mt-1">Up to 3 passengers • Smooth & comfortable</p>
+                    
+                    <div class="mt-6 pb-6 border-b border-slate-100">
+                        <span class="text-4xl font-extrabold text-slate-900">R2,800</span><span class="text-slate-500 text-sm font-medium"> / day</span>
+                        <div class="text-xs font-extrabold text-brand-600 mt-1.5 flex items-center gap-1.5">
+                            <i class="fa-solid fa-clock"></i> 08:00 - 19:00 • Unlimited Stops
+                        </div>
+                    </div>
+
+                    <div class="mt-5 space-y-2.5 text-xs">
+                        <div class="bg-amber-50 border border-amber-200/80 rounded-2xl p-3 flex justify-between items-center">
+                            <span class="font-medium text-slate-700">Full Upfront (Save 5%)</span>
+                            <b class="text-amber-700 text-sm">R2,660</b>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-3 flex justify-between items-center">
+                            <span class="font-medium text-slate-700">Split Payment (50/50)</span>
+                            <b class="text-slate-900">R1,400 + R1,400</b>
+                        </div>
+                    </div>
+
+                    <ul class="mt-6 text-xs text-slate-600 space-y-3">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600 font-bold"></i> Fuel (200km), tolls & waiting included</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600 font-bold"></i> Licensed driver + passenger insurance</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600 font-bold"></i> Airport transfers count as full day</li>
+                    </ul>
+                </div>
+
+                <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20would%20like%20to%20book%20the%20Standard%20Sedan%20at%20R2800%2Fday" target="_blank" class="mt-8 block w-full bg-brand-600 hover:bg-brand-700 text-white py-4 rounded-xl font-bold text-center text-sm shadow-md transition">
+                    Book Sedan (1-3 Pax)
+                </a>
             </div>
-            <div class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col">
-                <h3 class="font-extrabold text-lg">SUV</h3>
-                <p class="text-xs text-slate-500">Up to 4 passengers • Luggage space</p>
-                <div class="mt-4"><span class="text-3xl font-extrabold">R3,500</span><span class="text-slate-500 text-sm"> / day</span><div class="text-xs font-bold text-emerald-600 mt-1">08:00-19:00 • Unlimited stops</div></div>
-                <div class="mt-3 space-y-2 text-xs">
-                    <div class="bg-amber-50 border border-amber-200 rounded-xl p-2.5 flex justify-between"><span>Full upfront</span><b class="text-amber-700">R3,325 - Save 5%</b></div>
-                    <div class="bg-slate-50 border rounded-xl p-2.5"><b>Split:</b> R1,750 + R1,750</div>
+
+            <!-- SUV -->
+            <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-md flex flex-col justify-between">
+                <div>
+                    <h3 class="font-extrabold text-xl text-slate-900 mt-2">Premium SUV</h3>
+                    <p class="text-xs text-slate-500 mt-1">Up to 4 passengers • Extra luggage space</p>
+                    
+                    <div class="mt-6 pb-6 border-b border-slate-100">
+                        <span class="text-4xl font-extrabold text-slate-900">R3,500</span><span class="text-slate-500 text-sm font-medium"> / day</span>
+                        <div class="text-xs font-extrabold text-brand-600 mt-1.5 flex items-center gap-1.5">
+                            <i class="fa-solid fa-clock"></i> 08:00 - 19:00 • Unlimited Stops
+                        </div>
+                    </div>
+
+                    <div class="mt-5 space-y-2.5 text-xs">
+                        <div class="bg-amber-50 border border-amber-200/80 rounded-2xl p-3 flex justify-between items-center">
+                            <span class="font-medium text-slate-700">Full Upfront (Save 5%)</span>
+                            <b class="text-amber-700 text-sm">R3,325</b>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-3 flex justify-between items-center">
+                            <span class="font-medium text-slate-700">Split Payment (50/50)</span>
+                            <b class="text-slate-900">R1,750 + R1,750</b>
+                        </div>
+                    </div>
+
+                    <ul class="mt-6 text-xs text-slate-600 space-y-3">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600 font-bold"></i> Superior legroom & comfort</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600 font-bold"></i> Ample space for shopping & bags</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600 font-bold"></i> Fuel (200km) & tolls included</li>
+                    </ul>
                 </div>
-                <ul class="mt-5 text-xs text-slate-600 space-y-2">
-                    <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>Extra comfort for Peninsula</li>
-                    <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>Space for shopping & luggage</li>
-                    <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>Fuel 200km & tolls included</li>
-                </ul>
-                <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20would%20like%20to%20book%20SUV%20R3500%2Fday%20-%204%20passengers" target="_blank" class="mt-6 block w-full bg-slate-900 text-white py-3.5 rounded-xl font-bold text-center text-sm">Book SUV - 4 Pax</a>
+
+                <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20would%20like%20to%20book%20the%20SUV%20at%20R3500%2Fday" target="_blank" class="mt-8 block w-full bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-xl font-bold text-center text-sm shadow-md transition">
+                    Book SUV (1-4 Pax)
+                </a>
             </div>
-            <div class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col">
-                <h3 class="font-extrabold text-lg">Minibus - 13 Seater</h3>
-                <p class="text-xs text-slate-500">Groups 10-13 • Best per person rate</p>
-                <div class="mt-4"><span class="text-3xl font-extrabold">R4,800</span><span class="text-slate-500 text-sm"> / day</span></div>
-                <div class="mt-3 space-y-2 text-xs">
-                    <div class="bg-amber-50 border border-amber-200 rounded-xl p-2.5 flex justify-between"><span>Full upfront</span><b class="text-amber-700">R4,560 - Save 5%</b></div>
-                    <div class="bg-slate-50 border rounded-xl p-2.5"><b>Split:</b> R2,400 + R2,400</div>
+
+            <!-- Minibus -->
+            <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-md flex flex-col justify-between">
+                <div>
+                    <h3 class="font-extrabold text-xl text-slate-900 mt-2">Minibus (13-Seater)</h3>
+                    <p class="text-xs text-slate-500 mt-1">Groups 10–13 • Best per person value</p>
+                    
+                    <div class="mt-6 pb-6 border-b border-slate-100">
+                        <span class="text-4xl font-extrabold text-slate-900">R4,800</span><span class="text-slate-500 text-sm font-medium"> / day</span>
+                        <div class="text-xs font-extrabold text-brand-600 mt-1.5 flex items-center gap-1.5">
+                            <i class="fa-solid fa-clock"></i> 08:00 - 19:00 • Unlimited Stops
+                        </div>
+                    </div>
+
+                    <div class="mt-5 space-y-2.5 text-xs">
+                        <div class="bg-amber-50 border border-amber-200/80 rounded-2xl p-3 flex justify-between items-center">
+                            <span class="font-medium text-slate-700">Full Upfront (Save 5%)</span>
+                            <b class="text-amber-700 text-sm">R4,560</b>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-3 flex justify-between items-center">
+                            <span class="font-medium text-slate-700">Split Payment (50/50)</span>
+                            <b class="text-slate-900">R2,400 + R2,400</b>
+                        </div>
+                    </div>
+
+                    <ul class="mt-6 text-xs text-slate-600 space-y-3">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600 font-bold"></i> Perfect for families & tour groups</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600 font-bold"><span class="text-brand-600">~R369 per person</span> when full</i></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600 font-bold"></i> Unlimited waiting time & stops</li>
+                    </ul>
                 </div>
-                <ul class="mt-5 text-xs text-slate-600 space-y-2">
-                    <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>Ideal for families & groups</li>
-                    <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>R369 per person when full</li>
-                    <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>Unlimited stops & waiting</li>
-                </ul>
-                <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20would%20like%20to%20book%20Minibus%20R4800%2Fday" target="_blank" class="mt-6 block w-full bg-emerald-50 text-emerald-700 py-3.5 rounded-xl font-bold text-center text-sm">Book Minibus - 13 Pax</a>
+
+                <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20would%20like%20to%20book%20the%2013-Seater%20Minibus%20at%20R4800%2Fday" target="_blank" class="mt-8 block w-full bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-xl font-bold text-center text-sm shadow-md transition">
+                    Book Minibus (Up to 13 Pax)
+                </a>
             </div>
         </div>
-        <div class="mt-8 bg-slate-900 rounded-2xl p-5 text-white text-xs text-center">
-            <p><b>Payment:</b> 50% deposit to confirm booking, 50% on morning of last day. Single-day tours: balance payable at pickup. Full upfront payment saves 5%. Entrance fees payable at gate by card. Late-night airport after 8pm: R200/hr overtime.</p>
+
+        <div class="mt-10 bg-slate-900 rounded-2xl p-6 text-white text-xs text-center max-w-4xl mx-auto leading-relaxed shadow-lg">
+            <p><b class="text-amber-300">Payment & Booking Terms:</b> 50% deposit required to confirm reservations; remaining 50% due on the morning of your last day. Single-day tours are payable upon pickup. Full upfront payment saves 5% instantly. Attraction gate fees are paid directly at venues. Late-night airport pickups after 19:00 incur a R200/hr overtime fee.</p>
         </div>
     </section>
 
-    <footer id="contact" class="bg-slate-900 text-slate-400 py-10 text-center text-xs">
-        <p class="font-bold text-white">Afrika Travel and Tours - Private Car + Licensed Driver Per Day</p>
-        <p class="mt-2">Licensed tourist transport • Professional drivers • Passenger insurance • 8am-7pm flat rate</p>
-        <p class="mt-2">56 Parklands Main Rd, Cape Town • WhatsApp: +27 83 732 7440 • 08:00-19:00 daily</p>
-        <p class="mt-2">© 2026 Afrika Travel and Tours. All rights reserved.</p>
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-12 text-center text-xs border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+            <p class="font-extrabold text-white text-sm">Afrika Travel and Tours - Private Car + Licensed Driver Per Day</p>
+            <p>Licensed tourist transport • Professional certified drivers • Passenger liability insurance • 08:00–19:00 flat daily rate</p>
+            <p class="text-slate-300 font-medium">56 Parklands Main Rd, Parklands, Cape Town • WhatsApp: <a href="https://wa.me/27837327440" class="text-brand-400 hover:underline">+27 83 732 7440</a> • Email: mugdavi@gmail.com</p>
+            <div class="pt-4 border-t border-slate-800 text-slate-500 text-[11px]">
+                © 2026 Afrika Travel and Tours. All rights reserved.
+            </div>
+        </div>
     </footer>
 
-    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%20and%20Tours%2C%20I%20would%20like%20to%20book%20a%20car%20with%20driver" target="_blank" class="fixed bottom-5 right-5 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl text-2xl z-50"><i class="fa-brands fa-whatsapp"></i></a>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%20and%20Tours%2C%20I%20would%20like%20to%20book%20a%20car%20with%20driver" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#20ba5a] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl text-2xl z-50 transition transform hover:scale-110" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
