@@ -76,7 +76,7 @@
         </div>
     </header>
 
-    <!-- Hero Section (Fixed Background Opacity) -->
+    <!-- Hero Section -->
     <section id="home" class="relative pt-16 pb-24 bg-slate-900 overflow-hidden text-white">
         <div class="absolute inset-0 z-0 opacity-50">
             <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&q=80&w=2000" alt="Cape Town Background" class="w-full h-full object-cover">
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <!-- Tours & Routes Section -->
+    <!-- Tours & Routes Section (Now with Custom Route Images) -->
     <section id="tours" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -158,101 +158,143 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Peninsula Tour -->
-                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                <div class="bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group overflow-hidden">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-mountain-sun"></i></div>
-                        <h3 class="font-extrabold text-lg text-slate-900">Cape Peninsula Full Day</h3>
-                        <p class="text-[11px] font-bold text-brand-600 mt-0.5 tracking-wide">MOST BOOKED ROUTE • 08:00 - 19:00</p>
-                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Clifton, Camps Bay, Hout Bay, Chapman's Peak Drive, Noordhoek, Cape Point Nature Reserve, Cape of Good Hope, Boulders Beach Penguins, Simon's Town, Muizenberg.</p>
-                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
-                            <span class="font-bold text-slate-900">Includes:</span> Car, driver, fuel (200km), Chapman's toll & waiting time.<br>
-                            <span class="font-bold text-slate-900">Gate Fees:</span> Cape Point ~R460, Boulders ~R185 pp.
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=800" alt="Cape Peninsula" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Most Booked</div>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="font-extrabold text-lg text-slate-900">Cape Peninsula Full Day</h3>
+                            <p class="text-[11px] font-bold text-brand-600 mt-0.5 tracking-wide">08:00 - 19:00</p>
+                            <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Clifton, Camps Bay, Hout Bay, Chapman's Peak Drive, Noordhoek, Cape Point Nature Reserve, Cape of Good Hope, Boulders Beach Penguins, Simon's Town, Muizenberg.</p>
+                            <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                                <span class="font-bold text-slate-900">Includes:</span> Car, driver, fuel (200km), Chapman's toll & waiting time.<br>
+                                <span class="font-bold text-slate-900">Gate Fees:</span> Cape Point ~R460, Boulders ~R185 pp.
+                            </div>
                         </div>
                     </div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Cape%20Peninsula%20Full%20Day%20Tour%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-brand-700 hover:text-brand-800">
-                        Book Peninsula Tour <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <div class="px-7 pb-7">
+                        <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Cape%20Peninsula%20Full%20Day%20Tour%20for%20DATE%3A%20___" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-brand-700 hover:text-brand-800">
+                            Book Peninsula Tour <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Winelands Tour -->
-                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                <div class="bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group overflow-hidden">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-purple-600 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-wine-glass"></i></div>
-                        <h3 class="font-extrabold text-lg text-slate-900">Cape Winelands Experience</h3>
-                        <p class="text-[11px] font-bold text-purple-600 mt-0.5 tracking-wide">WINE TASTING & ESTATES • 09:00 - 18:00</p>
-                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Stellenbosch, Franschhoek, and Paarl. Explore world-class vineyards, historical Cape Dutch architecture, cellar tours, and gourmet cheese pairings.</p>
-                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
-                            <span class="font-bold text-slate-900">Top Estates:</span> Fairview, Babylonstoren, La Motte, Spice Route.<br>
-                            <span class="font-bold text-slate-900">Tastings:</span> R80 – R150 per estate payable at venue.
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800" alt="Cape Winelands" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 bg-purple-900/80 backdrop-blur text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Wine Estates</div>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="font-extrabold text-lg text-slate-900">Cape Winelands Experience</h3>
+                            <p class="text-[11px] font-bold text-purple-600 mt-0.5 tracking-wide">09:00 - 18:00</p>
+                            <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Stellenbosch, Franschhoek, and Paarl. Explore world-class vineyards, historical Cape Dutch architecture, cellar tours, and gourmet cheese pairings.</p>
+                            <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                                <span class="font-bold text-slate-900">Top Estates:</span> Fairview, Babylonstoren, La Motte, Spice Route.<br>
+                                <span class="font-bold text-slate-900">Tastings:</span> R80 – R150 per estate payable at venue.
+                            </div>
                         </div>
                     </div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Winelands%20Tour%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-purple-700 hover:text-purple-800">
-                        Book Winelands Tour <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <div class="px-7 pb-7">
+                        <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Winelands%20Tour%20for%20DATE%3A%20___" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-purple-700 hover:text-purple-800">
+                            Book Winelands Tour <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- City & Table Mountain -->
-                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                <div class="bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group overflow-hidden">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-city"></i></div>
-                        <h3 class="font-extrabold text-lg text-slate-900">City Tour & Table Mountain</h3>
-                        <p class="text-[11px] font-bold text-blue-600 mt-0.5 tracking-wide">CULTURE & LANDMARKS • Flexible Duration</p>
-                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Table Mountain Cableway, colorful Bo-Kaap houses, Company Gardens, Castle of Good Hope, V&A Waterfront, and panoramic views from Lion's Head.</p>
-                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
-                            <span class="font-bold text-slate-900">Optional Add-on:</span> Table Mountain cableway return ticket (~R420 pp, weather permitting).
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1576485375249-24d14a728156?auto=format&fit=crop&q=80&w=800" alt="Table Mountain" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 bg-blue-900/80 backdrop-blur text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Landmarks</div>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="font-extrabold text-lg text-slate-900">City Tour & Table Mountain</h3>
+                            <p class="text-[11px] font-bold text-blue-600 mt-0.5 tracking-wide">Flexible Duration</p>
+                            <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Table Mountain Cableway, colorful Bo-Kaap houses, Company Gardens, Castle of Good Hope, V&A Waterfront, and panoramic views from Lion's Head.</p>
+                            <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                                <span class="font-bold text-slate-900">Optional Add-on:</span> Table Mountain cableway return ticket (~R420 pp, weather permitting).
+                            </div>
                         </div>
                     </div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20City%20%26%20Table%20Mountain%20Tour%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-blue-700 hover:text-blue-800">
-                        Book City Tour <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <div class="px-7 pb-7">
+                        <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20City%20%26%20Table%20Mountain%20Tour%20for%20DATE%3A%20___" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-blue-700 hover:text-blue-800">
+                            Book City Tour <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Hermanus Whale Route -->
-                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                <div class="bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group overflow-hidden">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-sky-600 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-water"></i></div>
-                        <h3 class="font-extrabold text-lg text-slate-900">Hermanus Whale Route</h3>
-                        <p class="text-[11px] font-bold text-sky-600 mt-0.5 tracking-wide">SEASONAL (JUN-NOV) • Full Day</p>
-                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Scenic coastal drive via Gordon's Bay, Betty's Bay penguin colony at Stony Point, Hermanus cliff paths for land-based whale watching, and Hemel-en-Aarde wine valley.</p>
-                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
-                            <span class="font-bold text-slate-900">Highlights:</span> Land viewing is free; optional boat-based whale watching tours available.
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=800" alt="Hermanus Coastal Drive" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 bg-sky-900/80 backdrop-blur text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Seasonal (Jun-Nov)</div>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="font-extrabold text-lg text-slate-900">Hermanus Whale Route</h3>
+                            <p class="text-[11px] font-bold text-sky-600 mt-0.5 tracking-wide">Full Day Trip</p>
+                            <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Scenic coastal drive via Gordon's Bay, Betty's Bay penguin colony at Stony Point, Hermanus cliff paths for land-based whale watching, and Hemel-en-Aarde wine valley.</p>
+                            <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                                <span class="font-bold text-slate-900">Highlights:</span> Land viewing is free; optional boat-based whale watching tours available.
+                            </div>
                         </div>
                     </div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Hermanus%20Whale%20Route%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-sky-700 hover:text-sky-800">
-                        Book Whale Route <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <div class="px-7 pb-7">
+                        <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Hermanus%20Whale%20Route%20for%20DATE%3A%20___" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-sky-700 hover:text-sky-800">
+                            Book Whale Route <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Safari Day Trip -->
-                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                <div class="bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group overflow-hidden">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-amber-600 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-paw"></i></div>
-                        <h3 class="font-extrabold text-lg text-slate-900">Big 5 Safari Day Trip</h3>
-                        <p class="text-[11px] font-bold text-amber-600 mt-0.5 tracking-wide">AQUILA / INVERDOORN • 07:00 - 18:00</p>
-                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Early morning departure to a malaria-free private game reserve, welcome drinks, 2–3 hour guided open-vehicle Big 5 game drive, lunch buffet, and return drive to Cape Town.</p>
-                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
-                            <span class="font-bold text-slate-900">Safari Package:</span> Reserve fees (~R2,350 pp) include game drive & lunch. Transport rate separate.
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=800" alt="Big 5 Safari" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 bg-amber-900/80 backdrop-blur text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Wildlife</div>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="font-extrabold text-lg text-slate-900">Big 5 Safari Day Trip</h3>
+                            <p class="text-[11px] font-bold text-amber-600 mt-0.5 tracking-wide">Aquila / Inverdoorn • 07:00 - 18:00</p>
+                            <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Route highlights:</b> Early morning departure to a malaria-free private game reserve, welcome drinks, 2–3 hour guided open-vehicle Big 5 game drive, lunch buffet, and return drive to Cape Town.</p>
+                            <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                                <span class="font-bold text-slate-900">Safari Package:</span> Reserve fees (~R2,350 pp) include game drive & lunch. Transport rate separate.
+                            </div>
                         </div>
                     </div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Safari%20Day%20Trip%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-amber-700 hover:text-amber-800">
-                        Book Safari Trip <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <div class="px-7 pb-7">
+                        <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20the%20Safari%20Day%20Trip%20for%20DATE%3A%20___" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-amber-700 hover:text-amber-800">
+                            Book Safari Trip <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Airport & Shopping -->
-                <div class="bg-slate-50 rounded-3xl p-7 border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group">
+                <div class="bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-xl transition flex flex-col justify-between group overflow-hidden">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center text-xl mb-5 shadow-md group-hover:scale-105 transition"><i class="fa-solid fa-bag-shopping"></i></div>
-                        <h3 class="font-extrabold text-lg text-slate-900">Shopping & Airport Transfers</h3>
-                        <p class="text-[11px] font-bold text-slate-700 mt-0.5 tracking-wide">FLEXIBLE SCHEDULING • Per Day Rental</p>
-                        <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Options:</b> Direct airport meet-and-greet, hotel-to-hotel transfers, V&A Waterfront, Canal Walk, Greenmarket Square craft market, or bespoke business itineraries.</p>
-                        <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
-                            <span class="font-bold text-slate-900">Note:</span> Airport pickup counts as your daily rental, allowing extra stops on the same day at no extra charge.
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=80&w=800" alt="Airport Transfers and Shopping" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Convenience</div>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="font-extrabold text-lg text-slate-900">Shopping & Airport Transfers</h3>
+                            <p class="text-[11px] font-bold text-slate-700 mt-0.5 tracking-wide">Flexible Scheduling</p>
+                            <p class="text-xs text-slate-600 mt-3.5 leading-relaxed"><b>Options:</b> Direct airport meet-and-greet, hotel-to-hotel transfers, V&A Waterfront, Canal Walk, Greenmarket Square craft market, or bespoke business itineraries.</p>
+                            <div class="mt-4 bg-white rounded-2xl p-3.5 border border-slate-200/60 text-[11px] text-slate-600">
+                                <span class="font-bold text-slate-900">Note:</span> Airport pickup counts as your daily rental, allowing extra stops on the same day at no extra charge.
+                            </div>
                         </div>
                     </div>
-                    <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20Airport%20Transfer%20%26%20Shopping%20for%20DATE%3A%20___" target="_blank" class="mt-6 inline-flex items-center gap-2 text-xs font-bold text-slate-900 hover:text-black">
-                        Book Transfer <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <div class="px-7 pb-7">
+                        <a href="https://wa.me/27837327440?text=Hi%20Afrika%20Travel%2C%20I%20want%20to%20book%20Airport%20Transfer%20%26%20Shopping%20for%20DATE%3A%20___" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-slate-900 hover:text-black">
+                            Book Transfer <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -277,7 +319,7 @@
         </div>
     </section>
 
-    <!-- Rates & Fleet Section (Updated to "Max") -->
+    <!-- Rates & Fleet Section -->
     <section id="rates" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-slate-100/60 rounded-3xl my-8">
         <div class="text-center max-w-2xl mx-auto mb-16">
             <span class="inline-block bg-brand-50 text-brand-700 text-[11px] font-extrabold px-3.5 py-1.5 rounded-full tracking-wide">TRANSPARENT PRICING</span>
@@ -403,7 +445,7 @@
         </div>
     </section>
 
-    <!-- Footer (Updated with both emails) -->
+    <!-- Footer -->
     <footer id="contact" class="bg-slate-900 text-slate-400 py-12 text-center text-xs border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
             <p class="font-extrabold text-white text-sm">Afrika Travel and Tours - Private Car + Licensed Driver Per Day</p>
